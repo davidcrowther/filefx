@@ -1,4 +1,6 @@
 @import url(bootstrap.css);
+@import url(select2.css);
+@import url(select-config.css);
 @font-face {
   font-family: "OSR";
   src: url("../fonts/opensans-regular-webfont.eot");
@@ -114,6 +116,32 @@ p.bigger {
   .container.short {
     max-width: 812px; }
 
+.form-submit label {
+  display: block;
+  font-size: .9em;
+  padding: 2px 5px; }
+.form-submit .form-group {
+  margin-bottom: 20px; }
+  .form-submit .form-group.btn-holder {
+    margin-top: 30px; }
+.form-submit .form-control {
+  color: #454f53;
+  font-family: "OSB";
+  height: 40px; }
+
+label.error {
+  display: block;
+  color: #c09853;
+  background: #fcf8e3;
+  border: 1px solid #fbeed5;
+  margin-left: 5px;
+  margin-right: 5px;
+  border-radius: 0px 0px 5px 5px; }
+  label.error.valid {
+    color: #468847;
+    background: #dff0d8;
+    border-color: #d6e9c6; }
+
 .btn {
   white-space: normal; }
   .btn:hover, .btn:focus {
@@ -186,18 +214,6 @@ article.top-header {
     article.top-header .well-blue form {
       display: block;
       padding: 31px 18px 10px 18px; }
-  article.top-header .form-submit label {
-    display: block;
-    font-size: .9em;
-    padding: 2px 5px; }
-  article.top-header .form-submit .form-group {
-    margin-bottom: 20px; }
-    article.top-header .form-submit .form-group.btn-holder {
-      margin-top: 30px; }
-  article.top-header .form-submit .form-control {
-    color: #454f53;
-    font-family: "OSB";
-    height: 40px; }
   article.top-header.v2 {
     padding: 75px 0 130px 0;
     text-align: center; }
@@ -324,7 +340,7 @@ article.purple-area {
       margin-bottom: 44px;
       font-size: 2.2em; }
     article.purple-area.get-started .container .form-control {
-      height: 43px; }
+      height: 43px !important; }
     article.purple-area.get-started .container .btn-holder {
       text-align: left;
       padding-top: 16px; }

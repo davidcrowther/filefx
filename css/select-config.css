@@ -1,0 +1,17 @@
+/* Custom select styling */
+/* Define root element */
+.styled-dropdown-container {border: 0; }
+
+/* Choice element */
+.styled-dropdown-container .select2-choice {height: 44px; line-height: 44px; border: 0px; padding: 0 0 0 15px; color: #5f5f5f; border: 0; border-radius: 0px; filter: none; background:  none !important; }
+    .styled-dropdown-container .select2-choice span.select2-arrow { background: none !important ; border: 0; filter: none; border-radius: 0; margin-right: 5px;   }
+    .styled-dropdown-container .select2-choice span.select2-arrow b { background: url(../img/select2/dropdown-arrow.png) no-repeat top center; width: 10px; height: 6px; display: inline-block; vertical-align: middle;  }
+    .styled-dropdown-container.select2-dropdown-open .select2-choice span.select2-arrow b { background-position: bottom center;  }
+
+/* Dropdown select re-styling */
+.styled-dropdown-list{ border: 0;  }
+    .styled-dropdown-list ul.select2-results { margin: 0; padding: 0; max-height: 250px; }
+    .styled-dropdown-list li.select2-result { margin-bottom: 0; line-height: 100%;  color: #5f5f5f; font-size: 1em; padding: 15px 0; border: 1px solid #ccc; border-bottom: 0; }
+    .styled-dropdown-list li.select2-result.select2-highlighted { color: #fff; background: #f26226; border: 1px solid #f26226;  }
+    .styled-dropdown-list li.select2-result:last-child { border-radius: 0px 0px 4px 4px;  }
+    .styled-dropdown-list li.select2-result:first-child { border-top: 0px;  }

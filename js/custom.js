@@ -15,8 +15,7 @@ $(document).ready(function(){
 	        minlength: 2,
 	      	email: true
 	      }, 
-	      service_offer: {
-	        minlength: 2,
+	      service_offer: { 
 	        required: true
 	      } 
 	    },
@@ -29,6 +28,15 @@ $(document).ready(function(){
 	            .closest('.form-group').addClass('has-success');
 	    }
 	});
+
+	// Init select
+	$('select').select2({
+		minimumResultsForSearch: -1,
+		dropdownAutoWidth: true, 
+		containerCssClass: "styled-dropdown-container",
+		dropdownCssClass: "styled-dropdown-list"
+	});
+
 
 
 });

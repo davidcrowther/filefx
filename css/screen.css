@@ -372,6 +372,8 @@ footer {
     footer p a {
       text-decoration: underline;
       color: inherit; }
+      footer p a:hover {
+        opacity: .8; }
 
 @media (max-width: 766px) {
   /* Grid */

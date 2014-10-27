@@ -168,6 +168,9 @@ label.error {
     font-size: 1.46em;
     max-width: 100%;
     border: 1px solid #0076a1; }
+    html.ie8 .btn.btn-warning {
+      background: #f8ae84 !important;
+      filter: none; }
 
 article.top-header {
   background: #454f53;

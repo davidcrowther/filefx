@@ -1,5 +1,12 @@
 $(document).ready(function(){  
 
+    $(".btn-holder .btn-warning").click(function(){
+      href=$(this).attr('href'); 
+      $('html,body').animate({scrollTop: $(href).offset().top-50}, 1000);  
+      return false;
+    });         
+
+
 	$('form.form-submit').validate({
 	    rules: { 
 	      first_name: {
